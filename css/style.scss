@@ -1,0 +1,34 @@
+/*==========================================
+Common Css
+===========================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/*==========================================
+Login Css
+===========================================*/
+
+.login{
+    .heading{
+        margin-top: 150px;
+    }
+
+    .login-form{
+        border-radius: 10px;
+        box-shadow: 5px 9px 10px 4px #ddd5d5 ;
+        padding: 50px;
+    }
+}
+
+#transaction{
+    display: none;
+}
