@@ -26,7 +26,56 @@ Login Css
   padding: 50px;
 }
 
+/*==========================================
+Transaction Css
+===========================================*/
 #transaction {
   display: none;
+  padding: 150px 0;
+}
+
+#transaction .deposit {
+  background-color: slateblue;
+  margin: 0 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+#transaction .withdraw {
+  background-color: lightsalmon;
+  margin: 0 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+#transaction .balance {
+  background-color: orange;
+  margin: 0 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+/*==========================================
+inputs Css
+===========================================*/
+.inputs {
+  padding: 50px 0;
+}
+
+.inputs .deposit-input {
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 5px 10px 4px #ddd5d5;
+          box-shadow: -1px 5px 10px 4px #ddd5d5;
+  padding: 50px;
+}
+
+.inputs .withdraw-input {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 9px 10px 4px #ddd5d5;
+          box-shadow: 5px 9px 10px 4px #ddd5d5;
+  padding: 50px;
 }
 /*# sourceMappingURL=style.css.map */
