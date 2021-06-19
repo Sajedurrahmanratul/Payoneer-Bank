@@ -16,26 +16,19 @@ loginBtn.addEventListener("click", function () {
         const depositForm = document.getElementById("dipo-input").value;
         const inputDipo = parseFloat(depositForm);
 
-        const inputForm = document.getElementById("dipo-input").value;
-        const inputBalance = parseFloat(inputForm);
 
-        const deposit = document.getElementById("depositAmount").innerText;
-
-        const depositAmount = parseFloat(deposit);
-
-        const total = inputBalance + depositAmount;
-
-        document.getElementById("depositAmount").innerText = total;
-
-        const balanceAmount = document.getElementById("balance").innerText;
-        const balance = parseFloat(balanceAmount);
-        const totalDepoBalance = inputBalance + balance;
-
-        document.getElementById("balance").innerText = totalDepoBalance;
-
+        updateSpanText("depositAmount", inputDipo);
+        updateSpanText("balance", inputDipo);
 
 
     });
+
+    function updateSpanText(id, inputDipo) {
+        const currentBalance = document.getElementById(id).innerText;
+        const floatBalance = parseFloat(currentBalance);
+        const totalBalance = floatBalance + inputDipo;
+        document.getElementById(id).innerText = totalBalance;
+    };
 
     //Withdraw Section
     const withdrawButton = document.getElementById("withdrawBtn");
@@ -56,5 +49,9 @@ loginBtn.addEventListener("click", function () {
         const withdrawAmount = withdrawSec + withdrawForm;
         document.getElementById("withdraw").innerText = withdrawAmount;
 
+
+
+
     });
+
 });
